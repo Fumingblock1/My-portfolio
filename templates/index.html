@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riaan Engelbrecht | Junior Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">RE</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Available for work &bull; Ann Arbor, MI</p>
+      <h1 class="hero-title">Riaan<br>Engelbrecht</h1>
+      <p class="hero-sub">Junior Web Developer &mdash; I build real things, host them live, and keep learning every day. Inspired by Monty Python, powered by Python.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">See My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll">scroll &darr;</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-tag">About Me</span>
+          <h2>Aspiring developer with a passion for building real things</h2>
+          <p>I'm a self-driven junior developer based in Ann Arbor, MI. I love turning ideas into working web applications &mdash; from designing the front-end to wiring up a Flask backend and getting it live.</p>
+          <p>I've already built and deployed two live projects: an e-commerce site for a real brand and an online store. I learn by doing, and I'm always working on something new.</p>
+          <p class="fun-fact">&#128640; Fun fact: Monty Python was my gateway into loving Python the language.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Live Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">&#8734;</span>
+            <span class="stat-label">Things to Learn</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <span class="section-tag">Projects</span>
+      <h2>Things I've Built &amp; Shipped</h2>
+      <p class="section-sub">These aren't practice exercises &mdash; they're live, real websites I designed, built, and deployed.</p>
+
+      <div class="projects-grid">
+
+        <!-- Bamboo Bowls -->
+        <div class="project-card">
+          <div class="project-header bamboo-header">
+            <span class="project-badge">Live</span>
+            <h3>Bamboo Bowls</h3>
+          </div>
+          <div class="project-body">
+            <p>A full web application for a real South African brand. Users can browse and interact with the brand online. Built with Flask and deployed on Render.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>Flask</span><span>Python</span><span>Render</span>
+            </div>
+            <a href="https://bamboo-bowls.co.za" target="_blank" class="btn btn-primary btn-sm">Visit Site &rarr;</a>
+          </div>
+        </div>
+
+        <!-- High Tide -->
+        <div class="project-card">
+          <div class="project-header hightide-header">
+            <span class="project-badge">Live</span>
+            <h3>High Tide</h3>
+          </div>
+          <div class="project-body">
+            <p>An online cannabis store I designed and built from scratch. Currently hosted live on Railway. A real e-commerce project demonstrating full-stack skills.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Flask</span><span>Railway</span>
+            </div>
+            <a href="https://high-tide-production.up.railway.app" target="_blank" class="btn btn-primary btn-sm">Visit Site &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="project-card">
+          <div class="project-header portfolio-header">
+            <span class="project-badge wip-badge">This Site</span>
+            <h3>Developer Portfolio</h3>
+          </div>
+          <div class="project-body">
+            <p>You're looking at it. Built with Flask, HTML, CSS and JavaScript. Structured properly with Flask's templates and static folders. Hosted on GitHub Pages.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Flask</span>
+            </div>
+            <a href="https://github.com/Fumingblock1/My-portfolio" target="_blank" class="btn btn-ghost btn-sm">View Code &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <span class="section-tag">Skills</span>
+      <h2>What I Work With</h2>
+      <div class="skills-grid">
+        <div class="skill-item"><span class="skill-icon">&#128187;</span>HTML5</div>
+        <div class="skill-item"><span class="skill-icon">&#127912;</span>CSS3</div>
+        <div class="skill-item"><span class="skill-icon">&#9889;</span>JavaScript</div>
+        <div class="skill-item"><span class="skill-icon">&#128013;</span>Python</div>
+        <div class="skill-item"><span class="skill-icon">&#128167;</span>Flask</div>
+        <div class="skill-item"><span class="skill-icon">&#128260;</span>Git &amp; GitHub</div>
+        <div class="skill-item"><span class="skill-icon">&#127760;</span>Render</div>
+        <div class="skill-item"><span class="skill-icon">&#128642;</span>Railway</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container contact-container">
+      <span class="section-tag">Contact</span>
+      <h2>Let's Work Together</h2>
+      <p class="section-sub">I'm actively looking for junior developer roles in Ann Arbor and remote. Let's talk.</p>
+      <div class="contact-links">
+        <a href="mailto:riaanenegelbrechty@gmail.com" class="contact-link">
+          <span class="contact-icon">&#9993;</span>
+          <span>riaanenegelbrechty@gmail.com</span>
+        </a>
+        <a href="https://github.com/Fumingblock1" target="_blank" class="contact-link">
+          <span class="contact-icon">&#128025;</span>
+          <span>github.com/Fumingblock1</span>
+        </a>
+        <a href="https://www.linkedin.com/in/riaanengelbrecht/" target="_blank" class="contact-link">
+          <span class="contact-icon">&#128101;</span>
+          <span>LinkedIn Profile</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Built by Riaan Engelbrecht &mdash; Flask + HTML + CSS + JS &mdash; 2025</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
